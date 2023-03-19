@@ -1,40 +1,18 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        //Scanner entrada = new Scanner(System.in);
-        
-        System.out.println("Infome a marca do carro/moto?");
-        String marca = entrada.nextLine();
-        
-        System.out.println("Infome o modelo do carro/moto?");
-        String modelo = entrada.nextLine();
-        
-        System.out.println("Infome o ano do carro/moto?");
-        int ano = entrada.nextInt();
-       
-        System.out.println("Infome cor do carro/moto?");
-        String cor = entrada.nextLine();
-
-        System.out.println("Infome Cilindradas do moto?");
-        int cilindradas = entrada.nextInt();
-
-        System.out.println("Infome o numero das portas do carro?");
-        int numPortas = entrada.nextInt();
-
-        Veiculo veiculo = new Veiculo( marca,  modelo,  ano,  cor);
-        Motocicleta moto = new Motocicleta( marca,  modelo,  cor,  ano,  cilindradas);
-        Carro carro = new Carro( marca,  modelo,  cor,  ano,  numPortas);
+        Veiculo veiculo = new Veiculo("Honda", "New City", 2023, "Prata");
+        Carro carro = new Carro("Chevrolet", "Montana", 2023, "Preto", 4);
+        Motocicleta moto = new Motocicleta("Yamaha", "R3 ABS", 2023, "Azul", 321);
 
         veiculo.imprimirInformacoes();
+        System.out.println();
         moto.imprimirInformacoes();
+        System.out.println();
         carro.imprimirInformacoes();
+        System.out.println();
 
-        entrada.close();
-
-        
     }
     
 }

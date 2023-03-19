@@ -1,7 +1,7 @@
 public class Carro extends Veiculo {
     private int numPortas;
 
-    public Carro(String marca, String modelo, String cor, int ano, int numPortas) {
+    public Carro(String marca, String modelo, int ano, String cor, int numPortas) {
         super(marca, modelo, ano, cor);
         this.numPortas = numPortas;
     }
