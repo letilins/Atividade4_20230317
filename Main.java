@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
-
+        //Scanner entrada = new Scanner(System.in);
+        
         System.out.println("Infome a marca do carro/moto?");
         String marca = entrada.nextLine();
         
